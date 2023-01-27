@@ -1,0 +1,234 @@
+:root {
+    --text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --footer-color: #2f303a;
+    --background-color: #ffffff;
+    --accent-background-color: #f5f4fa;
+    --conteiner-color: #eeeeee;
+    --logo-color: black;
+}
+
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+.link {
+    text-decoration: none;
+}
+
+address {
+    font-style: normal;
+    color: var(--background-color);
+}
+
+ul {
+    list-style: none;
+}
+
+/* Logo */
+.logo-color {
+    font-family: Raleway;
+    font-weight: 700px;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.logo-footer {
+    font-family: Raleway;
+    font-weight: 700px;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--background-color);
+}
+
+.logo-header {
+    font-family: Raleway;
+    font-weight: 700px;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--logo-color);
+}
+
+/*  buttons */
+button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* .button-aktiv {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+} */
+.button-ogdinary {
+    background-color: var(--accent-background-color);
+    color: var(--title-text-color);
+}
+
+.button-aktion {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.button-ogdinary:hover,
+.button-ogdinary:focus {
+    background-color: var(--accent-color);
+    color: var(--background-color);
+}
+
+/* Header */
+.page-header {
+    background: var(--background-color);
+}
+
+.nav-header {
+    font-weight: 500;
+    line-height: 1, 2;
+    color: var(--title-text-color);
+}
+
+.nav-header-contact {
+    font-weight: 500;
+    line-height: 1, 2;
+    color: var(--text-color);
+}
+
+.nav-header:hover,
+.nav-header:focus {
+    color: var(--accent-color);
+}
+
+.nav-header.current {
+    color: var(--accent-color);
+}
+
+.nav-header-contact:hover,
+.nav-header-contact:focus {
+    color: var(--accent-color);
+}
+
+/* Footer */
+.footer {
+    font-style: normal;
+    background-color: var(--footer-color);
+}
+
+.footer-link {
+    color: var(--background-color);
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
+.footer-adr {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* довелося додати цей клас, щоб запрацював ховер. чому перестав працювати? */
+.footer-adr:hover,
+.footer-adr:focus {
+    color: var(--accent-color);
+}
+
+/* Приховати заголовок */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* заголовок портфоліо 2 */
+.title-porfolio {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.text-portfolio {
+    font-size: 16px;
+}
+
+/* Hero */
+.hero {
+    background-color: var(--footer-color);
+}
+
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--background-color);
+}
+
+/* advatages */
+.advatages-title {
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.advatages-text {
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* sections */
+.title-section {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+
+.team-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+
+.team-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.team-background {
+    background: var(--accent-background-color);
+}
