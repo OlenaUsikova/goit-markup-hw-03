@@ -17,10 +17,6 @@ body {
     letter-spacing: 0.03em;
 }
 
-.link {
-    text-decoration: none;
-}
-
 address {
     font-style: normal;
     color: var(--background-color);
@@ -28,6 +24,26 @@ address {
 
 ul {
     list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Приховати заголовок */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 /* Logo */
@@ -62,15 +78,14 @@ button {
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* .button-aktiv {
-  background-color: var(--accent-color);
-  color: var(--background-color);
-} */
 .button-ogdinary {
     background-color: var(--accent-background-color);
     color: var(--title-text-color);
+    display: inline-block;
 }
 
 .button-aktion {
@@ -82,6 +97,7 @@ button {
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    display: inline-block;
 }
 
 .button-ogdinary:hover,
@@ -90,7 +106,49 @@ button {
     color: var(--background-color);
 }
 
+.conteiner {
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0, auto;
+}
+
 /* Header */
+
+/* advatages */
+.conteiner {
+    display: inline-block;
+    padding: 0;
+}
+
+/* чому не застосовуються? Що перебиває? */
+.advatages-box {
+    display: inline-block;
+    width 270px,
+    margin-left: 30px;
+}
+
+.advatages-title {
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+}
+
+.advatages-text {
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* sections */
+.title-section {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
 .page-header {
     background: var(--background-color);
 }
@@ -148,19 +206,7 @@ button {
     color: var(--accent-color);
 }
 
-/* Приховати заголовок */
-.visually-hidden {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
-}
+
 
 /* заголовок портфоліо 2 */
 .title-porfolio {
@@ -178,6 +224,9 @@ button {
 /* Hero */
 .hero {
     background-color: var(--footer-color);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .hero-title {
@@ -188,30 +237,23 @@ button {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--background-color);
+    padding-top: 200px;
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+    margin-top: 0;
 }
 
-/* advatages */
-.advatages-title {
-    font-weight: 700;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: var(--title-text-color);
+.hero .button-aktion {
+    display: inline-block;
+    margin-bottom: 200px;
+    min-width: 216px;
+    height: 50px;
+    border-radius: 4px;
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15)
 }
 
-.advatages-text {
-    font-weight: 400;
-    line-height: 1.7;
-}
 
-/* sections */
-.title-section {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    text-align: center;
-
-    color: var(--title-text-color);
-}
 
 .team-names {
     font-weight: 500;
