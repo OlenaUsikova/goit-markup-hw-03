@@ -18,32 +18,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <!-- Navigation -->
-      <nav>
-        <a href="WebStudio" class="link logo-header"
-          ><span class="logo-color">Web</span>Studio</a
-        >
-        <ul>
-          <li><a class="link nav-header" href="./index.html">Студія</a></li>
+      <div class="nav-conteiner">
+        <nav class="nav-link-block">
+          <a href="WebStudio" class="link logo-header"><span class="logo-color">Web</span>Studio</a>
+          <ul class="nav-links">
+            <li>
+              <a class="link nav-header current" href="index.html">Студія</a>
+            </li>
+            <li>
+              <a class="link nav-header" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li><a class="link nav-header" href="Контакти">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-adress">
           <li>
-            <a class="link nav-header current" href="Портфоліо">Портфоліо</a>
+            <a class="link nav-header-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li><a class="link nav-header" href="Контакти">Контакти</a></li>
+          <li>
+            <a class="link nav-header-contact" href="tel:+14251234563">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li>
-          <a class="link nav-header-contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="link nav-header-contact" href="tel:+14251234563"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <main>
       <section>
@@ -173,12 +171,12 @@
             </li>
             <li>
               <a class="link footer-link" href="mailto:info@devstudio.com"
-                ><span class="footer-adr">info@devstudio.com</span></a
+                >info@devstudio.com</a
               >
             </li>
             <li>
               <a class="link footer-link" href="tel:+14251234563"
-                ><span class="footer-adr">+38 096 111 11 11</span></a
+                >>+38 096 111 11 11</a
               >
             </li>
           </ul>
